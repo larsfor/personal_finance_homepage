@@ -1,6 +1,6 @@
 # README
 
-As a person that's both interested in personal finance and technology, I've created this singe-page-application to have a place to gather my thoughts for personal finance tips and tricks. 
+As a person that's both interested in personal finance and technology, I've created this homepage to have a place to gather my thoughts for personal finance tips and tricks. 
 
 This page is created using Ruby on Rails.
 

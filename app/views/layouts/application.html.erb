@@ -7,10 +7,31 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="gridContainer">
+      <header>
+        <!-- Header content -->
+        <%= render "shared/header" %>
+      </header>
+
+      <nav>
+        <!-- Navigation -->
+        </nav>
+
+        <main>
+        <!-- Main content -->
+        <%= yield %>
+        </main>
+
+      <aside>
+        <!-- Sidebar / Ads -->
+      </aside>
+
+      <footer>
+        <!-- Footer content -->
+      </footer>
+    </div>
   </body>
 </html>

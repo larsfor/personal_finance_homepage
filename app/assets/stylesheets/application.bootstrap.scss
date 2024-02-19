@@ -1,2 +1,66 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+.gridContainer {
+    display: grid;
+  
+    grid-template-areas:
+      "header header header"
+      "nav content side"
+      "footer footer footer";
+  
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+  
+    height: 100vh;
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  nav {
+    grid-area: nav;
+    margin-left: 0.5rem;
+  }
+  
+  main {
+    grid-area: content;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; // From https://getcssscan.com/css-box-shadow-examples
+    border-radius: 5px;
+  }
+  
+  aside {
+    grid-area: side;
+    margin-right: 0.5rem;
+  }
+  
+  footer {
+    grid-area: footer;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; // From https://getcssscan.com/css-box-shadow-examples
+
+  }
+  
+  @media (max-width: 768px) {
+    .gridContainer {
+      grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "side"
+        "footer";
+  
+      grid-template-columns: 1fr;
+      grid-template-rows:
+        auto /* Header */
+        minmax(75px, auto) /* Nav */
+        1fr /* Content */
+        minmax(75px, auto) /* Sidebar */
+        auto; /* Footer */
+    }
+  
+    nav, aside {
+      margin: 0;
+    }
+  }

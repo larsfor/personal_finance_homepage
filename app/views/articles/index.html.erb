@@ -1,0 +1,17 @@
+<h1>Artikler</h1>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <% @articles.each do |article| %>
+    <div class="col">
+      <div class="card-group">
+        <div class="card" style="width: 18rem;">
+          <img src="https://th.bing.com/th/id/OIP.UOppeq1B2DSt9uNrnNEhCwHaE8?pid=ImgDet&rs=1" class="card-img-top" alt="a picture of a table with a coffee, some coins and a napkin with some personal finance lingo on.">
+          <div class="card-body">
+            <h5 class="card-title"><%= article.title %></h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <%= link_to "Les artikkel", article %>
+          </div>
+        </div>
+      </div>
+    </div>
+<% end %>
+</div>
