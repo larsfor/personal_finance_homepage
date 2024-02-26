@@ -5,5 +5,3 @@ As a person that's both interested in personal finance and technology, I've crea
 This page is created using Ruby on Rails.
 
 If you would like to know more about the possibilities of Ruby on Rails, I would strongly recommend [The Odin Project](https://www.theodinproject.com).
-
-test
